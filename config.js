@@ -71,8 +71,8 @@ map('O', ';U');
 map('T', ';u');
 
 // History Back/Forward
-map('H', 'S');
-map('L', 'D');
+map('j', 'S');
+map('l', 'D');
 
 // Scroll Page Down/Up
 mapkey("i", "Scroll up", () => { Normal.scroll("pageUp"); });
@@ -98,8 +98,12 @@ map('>', '>>');
 map('<', '<<');
 
 // Tab Next/Prev
-map('l', 'R');
-map('j', 'E');
+map('tj', 'R');
+map('tl', 'E');
+
+// Tab group Next/Prev
+map('TJ', '<Alt-,>');
+map('TL', '<Alt-.>');
 
 // --- Misc ---
 // Yank URL w/ one press (disables other yx binds)
@@ -123,6 +127,7 @@ unmap(';ap');
 iunmap(":");
 
 // Misc
+unmap('t')
 unmap(';t');
 unmap('si');
 unmap('ga');
