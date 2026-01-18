@@ -1,5 +1,6 @@
 // A very tridactyl-esque config file.
 // https://github.com/brookhong/Surfingkeys#edit-your-own-settings
+// moz-extension://29fa5277-85b4-431f-8bfa-518f649971f8/pages/options.html
 // Compatibility Prefix
 const {
     Clipboard,
@@ -89,8 +90,8 @@ mapkey('gF', '#12Open Chrome Flags', () => { tabOpenLink("chrome://flags/"); });
 // --- Tabs ---
 // Tab Delete/Undo
 map('D', 'x');
-mapkey('d', '#3Close current tab', () => { RUNTIME("closeTab"); });
-mapkey('u', '#3Restore closed tab', () => { RUNTIME("openLast"); });
+mapkey('qq', '#3Close current tab', () => { RUNTIME("closeTab"); });
+mapkey('qu', '#3Restore closed tab', () => { RUNTIME("openLast"); });
 
 // Move Tab Left/Right w/ one press
 map('>', '>>');
